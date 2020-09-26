@@ -4,53 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshop</title>
-    <link rel="stylesheet" href="book.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="book.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <h1>Book Shop</h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Basket</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search Your Next Book"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Explore<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">New</a>
+          <a href="#">Non-Fiction</a>
+          <a href="#">Fiction</a>
+          <a href="#">Coming Soon</a>
+        </div>
+         <div class="basket">
+          <i class="fa badge" id="basket" style="font-size:24px" value=5>&#xf07a;</i>
+        <a href="#about">Basket</a>
+        </div>
+      </div> 
+    </div>
+    <div class="search">
+      <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Title/Author/Keyword" name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <h1>Book Shop</h1> 
+    <p class="best">Bestsellers....</p>
+    <hr class="one">
     <div id="books"></div>
+    <div id="text"></div>
+    <div id="container"></div>
+    <button onclick="btnFunction()">Add To Basket</button>
         <script type="text/javascript" src="books.js"></script>
   </body>
+  <footer>
+    <ul class="info">
+      <li><a href="#">About Us</li>
+      <li><a href="#">Delievery Informayion</li>
+      <li><a href="#">FAQ</li>
+    </ul>
+  </footer>
 </html>
