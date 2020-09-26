@@ -125,17 +125,15 @@ h2 {
   }
 
   .bookImageTwo {
-    display: flex;
-    float: left;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .box {
   display: flex;
   float: left;
-  padding-bottom: 5rem;
-  padding-right: 0.5rem;
   font-family: 'PT Sans', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .was {
@@ -163,15 +161,36 @@ h2 {
 
 footer {
   background-color: darkkhaki;
-}
+  clear: both;
 
+}
 
 .info {
-  display: list-item;
-  font-family: 'PT Sans', sans-serif;
   padding-top: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 2rem;
+  list-style-type: square;
 }
 
-.buttonBottom {
-  margin-right: 550rem;
+
+.btn1 {
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
+    display: flex;
+    position: relative; left:20rem; top:1rem;
+    font-family: 'PT Sans', sans-serif;
+    border: 2px solid; black;
+    border-color: darkslategrey;
+}
+
+.btn2 {
+  cursor: pointer;
+  transition: transform 150ms;
+  transform: scale(1.03);
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: 'PT Sans', sans-serif;
+  border: 2px solid; black;
+  border-color: darkslategrey;
 }
