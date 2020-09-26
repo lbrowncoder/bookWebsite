@@ -57,11 +57,6 @@ for (let i = 0; i < mybookshop.length; i++){
     bookDiv.className = "container";
     let bookTextContainer = document.createElement("div");
 
-    function btnFunction() {
-        let btn = document.createElement("button");
-
-    }
-
     // book name
     let nameEl = document.createElement("h2");
     let bookname = document.createTextNode(mybookshop[i].name);
@@ -83,7 +78,7 @@ for (let i = 0; i < mybookshop.length; i++){
     let descriptionEl = document.createElement("p");
     let bookdescription = document.createTextNode(`${mybookshop[i].description}`);
     descriptionEl.appendChild(bookdescription);
-
+    
     // image
     let imageEl = document.createElement("img");
     imageEl.className = 'bookImage'; 
@@ -91,8 +86,6 @@ for (let i = 0; i < mybookshop.length; i++){
     imageEl.height = 200;
     imageEl.width = 200;
     console.log(imageEl),
-
-
 
     // appending each part of book to book div (order depends on order here)
     bookTextContainer.appendChild(nameEl);
@@ -109,3 +102,80 @@ for (let i = 0; i < mybookshop.length; i++){
     // appends the div to the entire document
     document.getElementById("books").appendChild(bookDiv);
     }
+
+
+    let mydiscounts = [
+        {
+        author2: "Walter Mosley",
+        name2: "The Awkward Black Man",
+        was: "£12.99",
+        now: "£9.99",
+        photo2: "./images/man.jpg",
+        },
+        {
+        author2: "Toni Morrison",
+        name2: "Beloved",
+        was: "£11.99",
+        now: "£7.99",
+        photo2: "./images/loved.jpg",
+        },
+        {
+        author2: "Solomon Northup",
+        name2: "Twelve Years a Slave",
+        was: "£18.99",
+        now: "£12.99",
+        photo2: "./images/12.jpg",
+        },
+    ]
+
+    for (let i = 0; i < mydiscounts.length; i++){
+
+    
+    let bookdiscount = document.createElement("div"); // Create entire div for each book
+    bookdiscount.className = "box";
+    let bookTextBox = document.createElement("div");
+    
+     // book name
+    let nameTwoEl = document.createElement("h3");
+    let booknametwo = document.createTextNode(mydiscounts[i].name2);
+    nameTwoEl.appendChild(booknametwo);
+    
+    // book author
+    let authorTwoEl = document.createElement("p");
+    let bookauthortwo = document.createTextNode(`Author: ${mydiscounts[i].author2}`);
+    authorTwoEl.appendChild(bookauthortwo);
+    
+        // price
+    let wasEl = document.createElement("p");
+    wasEl.className = "was";
+    let bookwas = document.createTextNode(`Was: ${mydiscounts[i].was}`);
+    wasEl.appendChild(bookwas);
+    console.log(bookwas);
+
+
+    // now            
+    let nowEl = document.createElement("p");
+    nowEl.className = "now";
+    let booknow = document.createTextNode(`Now: ${mydiscounts[i].now}`);
+    nowEl.appendChild(booknow);
+    console.log(booknow);
+
+    // image
+    let imageTwoEl = document.createElement("img");
+    imageTwoEl.className = 'bookImageTwo'; 
+    imageTwoEl.src = (`${mydiscounts[i].photo2}`);
+    imageTwoEl.height = 200;
+    imageTwoEl.width = 200;
+    console.log(imageTwoEl),
+
+
+    bookTextBox.appendChild(nameTwoEl);
+    bookTextBox.appendChild(authorTwoEl); 
+    bookTextBox.appendChild(wasEl);
+    bookTextBox.appendChild(nowEl);
+
+    bookdiscount.appendChild(imageTwoEl);
+    bookdiscount.appendChild(bookTextBox);
+
+    document.getElementById("discounts").appendChild(bookdiscount);
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookshop</title>
+    <title>Black Authors Bookshop</title>
     <link rel="stylesheet" href="book.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -32,20 +32,31 @@
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
-    <h1>Book Shop</h1> 
-    <p class="best">Bestsellers....</p>
-    <hr class="one">
+    <h1>Book Code</h1> 
+    <p class="best">Check Out Our Bestsellers</p>
+    <hr>
     <div id="books"></div>
-    <div id="text"></div>
+    <p class = "sale">The books You Love At Amazing Prices</p>
+    <div id="discounts"></div>
     <div id="container"></div>
-    <button onclick="btnFunction()">Add To Basket</button>
-        <script type="text/javascript" src="books.js"></script>
+      <button onclick="btnFunction()">Add To Basket</button> 
   </body>
   <footer>
     <ul class="info">
       <li><a href="#">About Us</li>
-      <li><a href="#">Delievery Informayion</li>
-      <li><a href="#">FAQ</li>
-    </ul>
+      <li><a href="#">Delievery Information</li>
+      <li><a href="#">FAQ</a>
+      </ul>   
+      <div class="join">
+        <p>Join our mailing list for 10% off your first order!</p>
+          <form action="action_page.php"></form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name"> 
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter Email">
+          </textarea>
+          <button type="button">Subscribe</button> 
+      </div>    
   </footer>
+  <script type="text/javascript" src="books.js"></script>
 </html>

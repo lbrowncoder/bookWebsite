@@ -34,13 +34,13 @@ h1 {
 }
 
 h2 {
-    
     color: orange;
 }
 
 .container {
     display: flex;
     padding-bottom: 5rem;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .bookImage {
@@ -55,6 +55,7 @@ h2 {
  .best {
     font-family: 'PT Sans', sans-serif;
     font-size: 2rem;
+    display: flex;
  }   
 
 .search {
@@ -123,9 +124,54 @@ h2 {
     display: block;
   }
 
-  .info {
-    font-family: 'PT Sans', sans-serif;
-    padding-top: 1rem;
-    background-color: darkkhaki;
+  .bookImageTwo {
+    display: flex;
+    float: left;
+    padding-right: 1rem;
+}
 
-  }
+.box {
+  display: flex;
+  float: left;
+  padding-bottom: 5rem;
+  padding-right: 0.5rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.was {
+  text-decoration: line-through;
+  color:lightslategray;
+  font-family: 'PT Sans', sans-serif;
+  color: darkgrey;
+}
+
+.sale {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.now { 
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}
+
+.join {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+footer {
+  background-color: darkkhaki;
+}
+
+
+.info {
+  display: list-item;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 1rem;
+}
+
+.buttonBottom {
+  margin-right: 550rem;
+}
